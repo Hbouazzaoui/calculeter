@@ -3,22 +3,18 @@ import java.lang.Math;
 
 public class Main {
 
-    // Function dyl addition\
     static double addition(double x, double y) {
         return x + y;
     }
 
-    // Function dyl subtraction
     static double subtraction(double x, double y) {
         return x - y;
     }
 
-    // Function dyl multiplication
     static double multiplication(double x, double y) {
         return x * y;
     }
 
-    // Function for division
     static double division(double x, double y) {
         return x / y;
     }
@@ -28,12 +24,10 @@ public class Main {
         return Math.pow(x, y);
     }
 
-    // Function for square root (in this case calculates hypotenuse sqrt(x^2 + y^2))
     static double squareRoot(double x, double y) {
         return Math.sqrt(x * x + y * y);
     }
 
-    // Function for factorial
     static double factorial(double x) {
         int result = 1;
         for (int i = 1; i <= x; i++) {
@@ -42,7 +36,6 @@ public class Main {
         return result;
     }
 
-    // Function to display the menu
     static void menu() {
         System.out.println("+: Addition");
         System.out.println("-: Subtraction");
@@ -67,9 +60,8 @@ public class Main {
             y = scanner.nextDouble();
 
             menu(); // Display the menu
-            char operation = scanner.next().charAt(0); // Get the operation choice
+            char operation = scanner.next().charAt(0); 
 
-            // Execute the operation based on user input
             switch (operation) {
                 case '+':
                     result = addition(x, y);
@@ -107,8 +99,8 @@ public class Main {
                     System.out.println("Invalid operation.");
                     break;
             }
-        } while (y == 0); // Loop until valid input (non-zero for division)
+        } while (y == 0); 
 
-        scanner.close(); // Close the scanner after use
+        scanner.close(); 
     }
 }
