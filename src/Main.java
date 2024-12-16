@@ -51,7 +51,6 @@ public class Main {
         double x, y;
         double result;
 
-        do {
             System.out.println("Enter the value of x: ");
             x = scanner.nextDouble();
             System.out.println("Enter the value of y: ");
@@ -97,8 +96,7 @@ public class Main {
                     System.out.println("Invalid operation.");
                     break;
             }
-        } while (y == 0);
-
-        scanner.close();
+            scanner.close();
+        }
     }
-}
+
